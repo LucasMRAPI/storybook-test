@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "description": "Starter template to get up and running quickly with Vue and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "author": {
+    "name": "Chromatic",
+    "email": "https://chromatic.com/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-vue-template"
+    "url": "git+https://github.com/chromaui/intro-storybook-vue-template.git"
   },
   "bugs": {
     "url": "https://github.com/chromaui/intro-storybook-vue-template/issues"
@@ -22,7 +25,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "init-msw": "msw init public/",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_b9359dd668d7a99"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -41,16 +45,19 @@
     "@storybook/vue3-vite": "^8.2.5",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
+    "chromatic": "^11.5.6",
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "eslint-plugin-vue": "^9.23.0",
     "msw": "^2.3.0",
     "msw-storybook-addon": "^2.0.2",
+    "playwright": "^1.45.3",
     "prettier": "^3.2.5",
     "storybook": "^8.2.5",
     "vite": "^5.2.8"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "homepage": "https://github.com/chromaui/intro-storybook-vue-template#readme"
 }
